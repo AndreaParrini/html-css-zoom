@@ -13,6 +13,10 @@
     --zoom-gray: #545454;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* Debug */
 
 .debug #site_header{
@@ -92,6 +96,7 @@
 
 #site_header{
     background-color: var(--zoom-main);
+    padding-bottom: 2rem;
 }
 
 #site_header .speaker_view, #site_header .maximize{
@@ -114,12 +119,28 @@
 
 #site_main{
     background-color: var(--zoom-main);
+    padding-bottom: 2rem;
 }
 
 #site_main .container{
     max-width: 1152px;
     width: 90%;
     margin: auto;
+}
+
+#site_main .col-2{
+    position: relative;
+}
+
+.name{
+    position:absolute;
+    left: 0;
+    bottom: 5px;
+    color: var(--zoom-white);
+    background-color: #545454a7;
+    margin: 0 1rem;
+    padding: 0.2rem;
+    font-size: 14px;
 }
 
 /* Footer */
