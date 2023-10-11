@@ -34,15 +34,10 @@ img{
     height: 500px;
 }
 
-.debug .col-2{
+.debug .col{
     background-color: bisque;
     height: 50px;
     border: 1px dashed black;
-}
-
-.debug .col-3, .debug .col-6{
-    height: 50px;
-    border: 1px dashed white;
 }
 
 .debug .function_call, .debug .function_audio, .debug .end_meeting{
@@ -74,14 +69,14 @@ img{
     justify-content: space-between;
 }
 
-.col-2{
+.col{
     width: calc(100% / 7);
 }
 
-[class^="col-"]{
+[class^="col"]{
     padding-left: 0.25rem;
     padding-right: 0.25rem; 
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
 }
 
 .jc_center{
