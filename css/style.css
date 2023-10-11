@@ -130,7 +130,7 @@ img{
 }
 
 #site_main .container{
-    max-width: 1152px;
+    max-width: 1440px;
     width: 90%;
     margin: auto;
 }
@@ -150,6 +150,7 @@ img{
 
 #site_footer{
     background-color: var(--zoom-footer);
+    width: 100vw;
 }
 
 #site_footer .function_audio, #site_footer .function_call{
