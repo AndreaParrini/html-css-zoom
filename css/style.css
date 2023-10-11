@@ -3,3 +3,147 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --zoom-white: white;
+    --zoom-red: #da2225;
+    --zoom-green: #5fc83b;
+    --zoom-main: black;
+    --zoom-footer: #262626;
+    --zoom-gray: #545454;
+}
+
+/* Debug */
+
+.debug #site_header{
+    height: 50px;
+    width: 100vw;
+}
+
+.debug #site_header .speaker_view,.debug #site_header .maximize{
+    height: 30px;
+    width: 50px;
+}
+
+.debug #site_main .container{
+    background-color: aqua;
+    height: 500px;
+}
+
+.debug .col-2{
+    background-color: bisque;
+    height: 50px;
+    border: 1px dashed black;
+}
+
+.debug .col-3, .debug .col-6{
+    height: 50px;
+    border: 1px dashed white;
+}
+
+.debug .function_call, .debug .function_audio, .debug .end_meeting{
+    height: 50px;
+    width: 200px;
+    background-color: aquamarine;
+}
+
+/* Utility */
+
+.d-flex{
+    display: flex;
+}
+
+
+.jc_flex_end{
+    justify-content: flex-end;
+}
+
+.row{
+    margin: 0 -1rem;
+}
+
+.flex_wrap{
+    flex-wrap: wrap;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+.col-2{
+    width: calc((100% / 12)*2);
+}
+
+.col-3{
+    width: calc((100% / 12)*3);
+}
+
+.col-6{
+    width: calc((100% / 12)*6);
+}
+
+[class^="col-"]{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+.jc_center{
+    justify-content: center;
+}
+
+.align_items_center{
+    align-items: center;
+}
+
+/* Header */
+
+#site_header{
+    background-color: var(--zoom-main);
+}
+
+#site_header .speaker_view, #site_header .maximize{
+    background-color: var(--zoom-gray);
+    color: var(--zoom-white)
+}
+
+#site_header .container{
+    gap: 0.25rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.speaker_view, .maximize{
+    padding: 0.25rem;
+    border-radius: 0.35rem;
+}
+
+/* Main */
+
+#site_main{
+    background-color: var(--zoom-main);
+}
+
+#site_main .container{
+    max-width: 1152px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Footer */
+
+#site_footer{
+    background-color: var(--zoom-footer);
+}
+
+.end_meeting{
+    background-color: var(--zoom-gray);
+    color: var(--zoom-red);
+    text-align: end;
+}
+
+.col-6{
+    text-align: center;
+    color: white;
+}
+
